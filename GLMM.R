@@ -141,8 +141,25 @@ emmeans(logit.m2, pairwise ~ pclass:Gender)
 
 plot(allEffects(logit.m2))
 
+##Save the Interaction plot
+# 1. Open jpeg file
+jpeg("InteractiveEffectsPlot.jpg")
+# 2. Create the plot
+plot(allEffects(logit.m2))
+# 3. Close the file
+dev.off()
+
 ##visualize the residuals to see if there are any differences in the variability of residuals as the value for each predictor variable increases.
 residualPlots(logit.m2, plots = T)
+
+
+##Save the residuals plot
+# 1. Open jpeg file
+jpeg("ResidualsPlot.jpg")
+# 2. Create the plot
+residualPlots(logit.m2, plots = T)
+# 3. Close the file
+dev.off()
 
 #model table for mixed model to see ICC etc.
 tab_model(logit.mx1, show.aic = T)
