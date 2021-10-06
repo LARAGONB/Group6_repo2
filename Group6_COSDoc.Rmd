@@ -107,7 +107,9 @@ Not applicable.
 
 -   Survival = (0 = No; 1 = Yes)
 
--   Sex (those of uknown sex were added to male category) - Age
+-   Sex (those of uknown sex were added to male category)
+
+-   Age
 
 **Other variables provided in the dataset, but will not be included in this confirmatory analysis are:**
 
@@ -149,17 +151,13 @@ Passengers who did not have their age in the dataset will be automatically exclu
 
 ## Exploratory analyses (optional)
 
-[Interactive effects for most parsimonious Titanic model predicting survivability using gender and class as interactive factors.](InteractiveEffectsPlot.jpg)
+![Interactive effects for most parsimonious Titanic model predicting survivability using gender and class as interactive factors.](InteractiveEffectsPlot.jpg) 
 
-[Residual plots for the Best Titanic model. These figures visualize the residuals to see if there are any differences in the variability of residuals as the value for each predictor variable increases.](ResidualsPlot.jpg)
+\
 
-# Other
+![Residual plots for the Best Titanic model. These figures visualize the residuals to see if there are any differences in the variability of residuals as the value for each predictor variable increases.](ResidualsPlot.jpg) 
 
-## Other (Optional)
-
-<!-- If there is any additional information that you feel needs to be included in your preregistration, please enter it here. Literature cited, disclosures of any related work such as replications or work that uses the same data, or other context that will be helpful for future readers would be appropriate here. -->
-
-Enter your response here.
+\
 
 # References
 
