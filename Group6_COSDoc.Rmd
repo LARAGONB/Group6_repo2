@@ -121,24 +121,23 @@ Not applicable.
 
 ## Indices
 
-To understand the summary statistics of the Titanic data, means will be extracted from the raw data. No other indices will be used for these data. Estimated marginal means will be used for multiple comparisons of simple logistic regressions. 
+To understand the summary statistics of the Titanic data, means will be extracted from the raw data. No other indices will be used for these data. Estimated marginal means will be used for multiple comparisons of simple logistic regressions.
 
 # Analysis Plan
 
-To understand how social class and gender (independent) drive survivorship (dependent) on the Titanic, we will use general mixed effect models (GLMMs) with age as a random effect in the model (R package: lme4).  We will test that accounting for age as a random effect improves the model. Interactions between gender and social class will also be explored to assess whether the interaction of the two variables are driving the outcome. Assumptions of the GLMMs will be confirmed. 
+To understand how social class and gender (independent) drive survivorship (dependent) on the Titanic, we will use general mixed effect models (GLMMs) with age as a random effect in the model (R package: lme4). We will test that accounting for age as a random effect improves the model. Interactions between gender and social class will also be explored to assess whether the interaction of the two variables are driving the outcome. Assumptions of the GLMMs will be confirmed.
 
 ## Statistical models
 
-
-To understand how social class and gender drive survivorship on the Titanic, we will use generalized mixed effect models with age as a random effect in the model (R package: lme4). Interactions between gender and social class will also be explored to assess whether the interaction of the two variables are driving the outcome. Multicollinearity will also be assessed using variable inflation factor (VIF) (R package: car). Chi-squared test for comparisons of models will be used to test the differences among models. Estimated marginal means (R package: emmeans) with Bonferroni adjustments will be used for multiple comparisons for simple logistic multiple regression models. Model prediction assessment will be done using confusion matrices. 
+To understand how social class and gender drive survivorship on the Titanic, we will use generalized mixed effect models with age as a random effect in the model (R package: lme4). Interactions between gender and social class will also be explored to assess whether the interaction of the two variables are driving the outcome. Multicollinearity will also be assessed using variable inflation factor (VIF) (R package: car). Chi-squared test for comparisons of models will be used to test the differences among models. Estimated marginal means (R package: emmeans) with Bonferroni adjustments will be used for multiple comparisons for simple logistic multiple regression models. Model prediction assessment will be done using confusion matrices.
 
 ## Transformations
 
-No transformations will be used for these data unless transformations are needed to meet assumptions. There are several variables that are binary and will be coded. The dependent variable survived will be coded as “yes” and “no”. Gender, which is a predictor variable, will be coded as “male” or “female.”
+No transformations will be used for these data unless transformations are needed to meet assumptions. There are several variables that are binary and will be coded. The dependent variable survived will be coded as "yes" and "no". Gender, which is a predictor variable, will be coded as "male" or "female."
 
 ## Inference criteria
 
-We will use the standard p<.05 criteria from the Chi-squared analysis to determine the most parsimonious glm model, which would suggest that the models are significantly different from those expected if the null hypothesis were correct. AIC and BIC values will also be compared between models to further assess which model is the most parsimonious model. The post-hoc estimated marginal means analysis, adjusted using Bonferroni.
+We will use the standard p\<.05 criteria from the Chi-squared analysis to determine the most parsimonious glm model, which would suggest that the models are significantly different from those expected if the null hypothesis were correct. AIC and BIC values will also be compared between models to further assess which model is the most parsimonious model. The post-hoc estimated marginal means analysis, adjusted using Bonferroni.
 
 ## Data exclusion
 
@@ -150,9 +149,9 @@ Passengers who did not have their age in the dataset will be automatically exclu
 
 ## Exploratory analyses (optional)
 
-[Interactive effects for most parsimonious Titanic model predicting survivability using gender and class as interactive factors.](Interactive effects of Best Titanic model.png)
+[Interactive effects for most parsimonious Titanic model predicting survivability using gender and class as interactive factors.](Interactive%20effects%20of%20Best%20Titanic%20model.png)
 
-[Residual plots for the Best Titanic model. These figures visualize the residuals to see if there are any differences in the variability of residuals as the value for each predictor variable increases.](Residual plots for the Best titanic model.png) 
+[Residual plots for the Best Titanic model. These figures visualize the residuals to see if there are any differences in the variability of residuals as the value for each predictor variable increases.](Residual%20plots%20for%20the%20Best%20titanic%20model.png)
 
 # Other
 
